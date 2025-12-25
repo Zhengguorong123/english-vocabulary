@@ -1,10 +1,8 @@
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS SAT;
 CREATE TABLE SAT  (
-  word varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  translate text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL
-) ENGINE = InnoDB AUTO_INCREMENT = 4417 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+  word varchar(255),
+  translate text
+);
 INSERT INTO SAT (word,translate) VALUES ('pharmacy','n.药房；配药学，药剂学；制药业；一批备用药品');
 INSERT INTO SAT (word,translate) VALUES ('toilsome','adj.辛苦的；劳苦的；费力的');
 INSERT INTO SAT (word,translate) VALUES ('efface','v.抹去，抹掉；使自己不受人注意');

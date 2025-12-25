@@ -1,10 +1,8 @@
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS junior;
-CREATE TABLE junior  (
-  word varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  translate text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL
-) ENGINE = InnoDB AUTO_INCREMENT = 4417 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+CREATE TABLE junior (
+    word varchar(255),
+    translate text
+);
 INSERT INTO junior (word,translate) VALUES ('boat','n.小船；轮船v.划船');
 INSERT INTO junior (word,translate) VALUES ('group','n.组；团体adj.群的；团体的v.聚合');
 INSERT INTO junior (word,translate) VALUES ('nineteen','num.十九');

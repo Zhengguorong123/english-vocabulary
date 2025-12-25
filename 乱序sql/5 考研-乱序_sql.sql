@@ -1,10 +1,8 @@
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS graduate;
 CREATE TABLE graduate  (
-  word varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  translate text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL
-) ENGINE = InnoDB AUTO_INCREMENT = 4417 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+  word varchar(255),
+  translate text
+);
 INSERT INTO graduate (word,translate) VALUES ('revolt','n.反抗；造反，起义v.起义；反抗');
 INSERT INTO graduate (word,translate) VALUES ('specialist','n.专家');
 INSERT INTO graduate (word,translate) VALUES ('carpet','n.地毯');

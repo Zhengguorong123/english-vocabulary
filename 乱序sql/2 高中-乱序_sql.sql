@@ -1,10 +1,8 @@
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS senior;
 CREATE TABLE senior  (
-  word varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  translate text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL
-) ENGINE = InnoDB AUTO_INCREMENT = 4417 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+  word varchar(255),
+  translate text
+);
 INSERT INTO senior (word,translate) VALUES ('beddings','n.寝具；（建筑）[建]基床；（家畜）草垫adj.适于花坛种植的vt.把…栽入苗床（bed的ing形式）vi.睡（bed的ing形式）');
 INSERT INTO senior (word,translate) VALUES ('although','conj.尽管；虽然；但是；然而');
 INSERT INTO senior (word,translate) VALUES ('effort','n.努力；成就');

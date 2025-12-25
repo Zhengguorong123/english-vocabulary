@@ -1,10 +1,8 @@
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS CET6;
 CREATE TABLE CET6  (
-  word varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  translate text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL
-) ENGINE = InnoDB AUTO_INCREMENT = 4417 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+  word varchar(255),
+  translate text
+);
 INSERT INTO CET6 (word,translate) VALUES ('consistent','adj.一致的');
 INSERT INTO CET6 (word,translate) VALUES ('battery','n.电池');
 INSERT INTO CET6 (word,translate) VALUES ('competent','adj.能胜任的，有能力的');

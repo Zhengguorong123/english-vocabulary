@@ -1,10 +1,8 @@
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS CET4;
 CREATE TABLE CET4  (
-  word varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  translate text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL
-) ENGINE = InnoDB AUTO_INCREMENT = 4417 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+  word varchar(255),
+  translate text
+);
 INSERT INTO CET4 (word,translate) VALUES ('access','v.获取n.接近，入口');
 INSERT INTO CET4 (word,translate) VALUES ('project','n.工程；课题、作业');
 INSERT INTO CET4 (word,translate) VALUES ('intention','n.打算，意图');

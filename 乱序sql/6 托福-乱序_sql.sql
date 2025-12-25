@@ -1,10 +1,8 @@
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS TOEFL;
 CREATE TABLE TOEFL  (
-  word varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  translate text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL
-) ENGINE = InnoDB AUTO_INCREMENT = 4417 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+  word varchar(255),
+  translate text
+);
 INSERT INTO TOEFL (word,translate) VALUES ('back','adv.回原处n.背,后面adj.后面的v.后退');
 INSERT INTO TOEFL (word,translate) VALUES ('significant','adj.重要的,意义重大的');
 INSERT INTO TOEFL (word,translate) VALUES ('skill','n.技能,技巧');
